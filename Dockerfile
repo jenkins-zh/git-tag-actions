@@ -17,6 +17,8 @@ ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
+USER root
+
 RUN apk add --no-cache \
         git \
         openssh-client \

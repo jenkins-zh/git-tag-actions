@@ -21,7 +21,7 @@ RUN apk add --no-cache \
         git \
         openssh-client \
         libc6-compat \
-        libstdc++
+        libstdc++ \
         bash
 
 COPY entrypoint.sh /entrypoint.sh

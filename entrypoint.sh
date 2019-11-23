@@ -28,5 +28,6 @@ git tag --list
 git tag $NEW_TAG
 pwd
 ls -ahl
+ls ~
 git remote -vv
 git push --tags

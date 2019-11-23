@@ -1,10 +1,6 @@
-# Git repo backup Action
+# Git tag Action
 
-GitHub Action for backup your git repository.
-
-**restriction**
-
-Now, only `https://gitee.com` is supported.
+GitHub Action for tag your git repository.
 
 ## Create Deploy Key
 
@@ -16,7 +12,6 @@ Now, only `https://gitee.com` is supported.
 ## Environment Variables
 
 - `GIT_DEPLOY_KEY` - *Required* your deploy key which has **Write access**
-- `TARGET_GIT` : **required**, your backup git repository (please use ssh or git protocol)
 
 ```
 name: Backup Git Repository
@@ -31,9 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: git-repo-backup
-      uses: jenkins-zh/git-backup-actions@v0.0.1
+    - name: git-tag
+      uses: jenkins-zh/git-tag-actions@master
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
-        TARGET_GIT: "git@gitee.com:surenpi/surenpi.git"
 ```

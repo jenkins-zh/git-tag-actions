@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo '=================== Create deploy key to push ==================='
 mkdir /root/.ssh
 ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts && \

@@ -26,4 +26,7 @@ git config --global user.email
 
 git tag --list
 git tag $NEW_TAG
+pwd
+ls -ahl
+git remote -vv
 git push --tags
